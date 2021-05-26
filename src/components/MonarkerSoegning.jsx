@@ -3,7 +3,7 @@ import React from 'react'
 const MonarkerSoegning = () => {
     return (
         <div>
-            <h1>MonarkerSoegning </h1>
+            <h1>MonarkerSoegning</h1>
         </div>
     )
 }
