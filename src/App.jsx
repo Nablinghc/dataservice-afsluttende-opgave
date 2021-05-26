@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import { useState } from 'react'
+/* import { useState } from 'react' */
 import './App.css';
 
 // Components
@@ -24,6 +24,9 @@ import Home from './pages/Home'
 function App() {
   return (
     <div className="App">
+
+ {console.log("Så langt, så godt")}
+
       <BrowserRouter>
       
       <Header />
@@ -51,12 +54,6 @@ function App() {
 
       <Route exact path="/MonarkAdmin">
         <MonarkAdmin />
-      </Route>
-
-
-{/* Skal kun være her midlertidigt og derefter slettes, da det er en del af MonarkAdmin */}
-      <Route exact path="/MonarkRet">
-        <MonarkRet />
       </Route>
 
       <Route exact path="/Vejret">
