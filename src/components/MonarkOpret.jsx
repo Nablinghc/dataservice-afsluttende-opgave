@@ -73,9 +73,17 @@ const MonarkOpret = () => {
 
             <form onSubmit={handleSubmit}>
 
-                <input name="titel" type="text" placeholder="Titel her ..." />
+                <input name="navn" type="text" placeholder="Navn her ..." />
                 <br />
-                <input name="Monark" type="text" placeholder="Monark her ..." />
+                <input name="land" type="text" placeholder="Land her ..." />
+                <br />
+                <input name="historie" type="text" placeholder="Historie her ..." />
+                <br />
+                <input name="foedtaar" type="text" placeholder="Fødselsår her ..." />
+                <br />
+                <input name="doedaar" type="text" placeholder="Dødsår her ..." />
+                <br />
+                <input name="billede" type="file" placeholder="Billede her ..." />
                 <br />
                 <input type="submit" value="SEND" />
 

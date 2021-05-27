@@ -38,9 +38,9 @@ export const hentMonarkUdFraId = (monarkId) => {
 // -------- POST - opret ny monark ... ny monark består af titel og monark
 export const opretMonark = (monarkdata) => {
 
-    // POST http://localhost:5056/monark
+    // POST http://localhost:5056/monarker/admin
     // axios.post(url, postdata)
-    let response = axios.post( api.baseUrl + "monark", monarkdata )
+    let response = axios.post( api.baseUrl + "monarker/admin", monarkdata )
         .then( res => { return res.data } )
 
     return response
@@ -51,7 +51,7 @@ export const opretMonark = (monarkdata) => {
 export const sletMonark = (monarkId) => {
 
     // DELETE http://localhost:5056/monark/60a3a750f6830753dc7490c9
-    let response = axios.delete( api.baseUrl + "monark/" + monarkId )
+    let response = axios.delete( api.baseUrl + "monarker/admin/" + monarkId )
          .then( res => { return res.data } )
 
     return response

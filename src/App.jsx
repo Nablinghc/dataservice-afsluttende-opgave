@@ -6,8 +6,8 @@ import './App.css';
 import Header from './layout/Header'
 import Navbar from './layout/Navbar'
 import Footer from './layout/Footer'
-import Monarker from './components/Monarker'
 import Monark from './components/Monark'
+import Monarker from './components/Monarker'
 import MonarkerSoegning from './components/MonarkerSoegning'
 import MonarkOpret from './components/MonarkOpret'
 import MonarkAdmin from './components/MonarkAdmin'
@@ -36,12 +36,12 @@ function App() {
         <Home />
       </Route>
 
-      <Route exact path="/Monarker">
-        <Monarker />
-      </Route>
-      
       <Route exact path="/Monark">
         <Monark />
+      </Route>
+      
+      <Route exact path="/Monarker">
+        <Monarker />
       </Route>
       
       <Route exact path="/MonarkerSoegning">
